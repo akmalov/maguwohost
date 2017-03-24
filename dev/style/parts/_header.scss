@@ -100,6 +100,11 @@
       line-height: 1.714;
       font-weight: 600;
       background: #ffe13e;
+      cursor: pointer;
+
+      &:hover {
+        background: darken(#ffe13e, 10%);
+      }
 
       &:after {
         content: '';
