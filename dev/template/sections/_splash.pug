@@ -1,0 +1,18 @@
+section.splash
+    include ../parts/_header
+    .container
+        h2.splash__title Just a Proffesional Web Hosting Services
+        ul.splash__list
+            li.splash__item modern
+            li.splash__item fast
+            li.splash__item reliable
+        img(src="img/icons/splash.png").splash__sign
+        form.splash__form
+            input(name="domain" placeholder="Your Domain Name ...").splash__form-domain
+            .splash__form-choose-zone
+                i.fa.fa-chevron-down.splash__form-chevron
+                select.splash__form-zone(name="select zone")
+                    option(name=".com") .com
+                    option(name=".org") .org
+                    option(name=".net") .net
+            button.splash__form-submit(type="submit") Check Availability

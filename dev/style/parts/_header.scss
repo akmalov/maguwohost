@@ -1,0 +1,124 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 147px;
+  background: #fff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    min-height: 147px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    position: relative;
+    padding-left: 45px;
+    font-size: 30px;
+    line-height: 1;
+    font-family: "Rockwell";
+    color: #202242;
+
+    &-span {
+      font-weight: 700;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 1px;
+      width: 26px;
+      height: 32px;
+      background: url('../img/icons/logo.png') center center / cover no-repeat;
+    }
+  }
+
+  .nav {
+
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 8px;
+    }
+
+    &__item {
+      margin-right: 38px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #202242;
+      text-transform: uppercase;
+
+      &:hover {
+        font-weight: 700;
+        color: #ffe13e;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 332px;
+    min-height: 147px;
+    border-left: 1px solid #ebebeb;
+    color: #202242;
+
+    &-desc {
+      margin-bottom: 18px;
+      font-size: 12px;
+      line-height: 2;
+      font-weight: 600;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &-chat {
+      position: relative;
+      height: 41px;
+      margin-right: 42px;
+      padding: 10px 30px 0;
+      font-size: 14px;
+      line-height: 1.714;
+      font-weight: 600;
+      background: #ffe13e;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: -23px;
+        width: 1px;
+        height: 34px;
+        background: #babbc4;
+      }
+    }
+
+    &-phone {
+      font-size: 24px;
+      line-height: 1;
+      font-family: "Lato";
+      font-weight: 700;
+      color: #202242;
+    }
+  }
+}
+
